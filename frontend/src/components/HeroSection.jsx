@@ -119,7 +119,7 @@ const HeroSection = () => {
               {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-200 rounded-full blur-xl opacity-60"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-200 rounded-full blur-xl opacity-40"></div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
