@@ -41,7 +41,13 @@ const AboutSection = () => {
         {/* Main About Content */}
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div className="space-y-8">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
               <div className="space-y-6">
                 <h2 className="text-4xl lg:text-5xl font-display font-bold text-gray-900">
                   Чому обирають 
