@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Shield, BarChart3, Palette, Award } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const AboutSection = () => {
   const advantages = [
