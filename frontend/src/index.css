@@ -16,7 +16,54 @@ code {
         monospace;
 }
 
+/* Arigami Digital Color Palette - inspired by BigFish guidelines */
+:root {
+  /* Primary Brand Colors - Blues from logo */
+  --color-primary-blue: #3b82f6;
+  --color-primary-blue-50: #eff6ff;
+  --color-primary-blue-100: #dbeafe;
+  --color-primary-blue-200: #bfdbfe;
+  --color-primary-blue-300: #93c5fd;
+  --color-primary-blue-400: #60a5fa;
+  --color-primary-blue-500: #3b82f6;
+  --color-primary-blue-600: #2563eb;
+  --color-primary-blue-700: #1d4ed8;
+  --color-primary-blue-800: #1e40af;
+  --color-primary-blue-900: #1e3a8a;
 
+  /* Secondary Colors - following BigFish vibrant system */
+  --color-light-blue: #b7fbff;
+  --color-mid-blue: #88a2ff;
+  --color-dark-blue: #1f47e6;
+  
+  --color-light-pink: #ffd1e7;
+  --color-mid-pink: #ff84e4;
+  
+  --color-mid-purple: #d987ff;
+  --color-light-purple: #f3e8ff;
+  
+  --color-mid-yellow: #ffe03d;
+  --color-light-yellow: #f6fd87;
+  
+  --color-mid-orange: #ff965a;
+  --color-dark-orange: #d1903a;
+  
+  --color-mid-green: #78d692;
+  --color-dark-green: #a1a500;
+  
+  /* Base Colors */
+  --color-black: #151515;
+  --color-white: #ffffff;
+  --color-grey: #b6cbcb;
+  --color-mid-grey: #aaaaaa;
+  --color-dark-grey: #717171;
+
+  /* Semantic Colors */
+  --color-success: var(--color-mid-green);
+  --color-warning: var(--color-mid-yellow);
+  --color-error: #ef4444;
+  --color-info: var(--color-primary-blue);
+}
 
 @layer base {
   :root {
@@ -73,8 +120,6 @@ code {
         --chart-5: 340 75% 55%;
     }
 }
-
-
 
 @layer base {
   * {
