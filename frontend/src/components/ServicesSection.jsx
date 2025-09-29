@@ -102,7 +102,21 @@ const ServicesSection = () => {
                   ))}
                 </div>
                 
-                <button className={`group/btn flex items-center ${service.textColor} font-medium hover:gap-2 transition-all duration-200`}>
+                <button 
+                  onClick={() => {
+                    // Прокрутка к секции контактов для заказа услуги
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Автоматически выбираем услугу в форме
+                    const serviceSelect = document.getElementById('service');
+                    if (serviceSelect) {
+                      serviceSelect.value = service.title;
+                      serviceSelect.dispatchEvent(new Event('change', { bubbles: true }));
+                    }
+                  }}
+                  className={`group/btn flex items-center ${service.textColor} font-medium hover:gap-2 transition-all duration-200`}
+                >
                   Детальніше
                   <ArrowRight className="ml-1 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
