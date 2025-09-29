@@ -6,6 +6,7 @@ import { Toaster } from './components/ui/sonner';
 // Components
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import MissionSection from './components/MissionSection';
 import ServicesSection from './components/ServicesSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
