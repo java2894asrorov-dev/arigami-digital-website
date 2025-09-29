@@ -314,7 +314,7 @@ const ContactSection = () => {
                   </Button>
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
