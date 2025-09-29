@@ -19,9 +19,10 @@ const HeroSection = () => {
               className="space-y-8"
             >
               <div className="space-y-6">
-                <h1 className="text-5xl lg:text-6xl font-display font-bold leading-tight">
-                  <span className="text-3d block">Ваш бізнес заслуговує на</span>
-                  <span className="text-3d-shadow block" data-text="найкращу рекламу">найкращу рекламу</span>
+                <h1 className="text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">
+                  Ваш бізнес заслуговує на
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent"> найкращу </span>
+                  рекламу
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Створюємо ефективні рекламні кампанії з повним контролем результату. 
