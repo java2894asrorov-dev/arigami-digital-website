@@ -33,7 +33,7 @@ const Footer = () => {
               />
               <div>
                 <div className="font-display font-bold text-2xl">ARIGAMI</div>
-                <div className="text-sm text-blue-400 font-mono font-bold uppercase tracking-wider">DIGITAL</div>
+                <div className="text-base text-blue-400 font-mono font-bold uppercase tracking-wider">DIGITAL</div>
               </div>
             </div>
             
