@@ -6,8 +6,9 @@ import FloatingShapes from './FloatingShapes';
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 pt-24 pb-16">
-      <div className="container mx-auto px-6">
+    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 pt-24 pb-16 relative overflow-hidden">
+      <FloatingShapes />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
