@@ -34,6 +34,10 @@ const Header = () => {
               Контакти
             </a>
             <Button 
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="cta-button bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full"
             >
               БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ
