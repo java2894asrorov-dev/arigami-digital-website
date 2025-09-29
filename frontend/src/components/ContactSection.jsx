@@ -6,6 +6,7 @@ import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Phone, Mail, MessageCircle, Send } from 'lucide-react';
 import { toast } from 'sonner';
+import { motion } from 'framer-motion';
 
 const ContactSection = () => {
   const [isLoading, setIsLoading] = useState(false);
