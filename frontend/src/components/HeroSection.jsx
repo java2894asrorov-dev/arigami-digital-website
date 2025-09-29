@@ -25,6 +25,10 @@ const HeroSection = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium group"
                 >
                   РОЗПОЧАТИ ЗАРАЗ
@@ -33,6 +37,10 @@ const HeroSection = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
+                  onClick={() => {
+                    const servicesSection = document.getElementById('services');
+                    servicesSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-full text-lg font-medium"
                 >
                   ДІЗНАТИСЯ БІЛЬШЕ
