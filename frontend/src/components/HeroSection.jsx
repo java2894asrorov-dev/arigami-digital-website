@@ -21,7 +21,7 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">
                   Ваш бізнес заслуговує на
-                  <span className="text-blue-600"> найкращу </span>
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent"> найкращу </span>
                   рекламу
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
