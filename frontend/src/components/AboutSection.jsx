@@ -82,10 +82,16 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Visual Element */}
-            <div className="relative">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-8 text-white">
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
