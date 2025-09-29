@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight, Target, Zap, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
+import FloatingShapes from './FloatingShapes';
 
 const HeroSection = () => {
   return (
