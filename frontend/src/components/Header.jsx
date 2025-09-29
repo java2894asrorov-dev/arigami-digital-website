@@ -17,7 +17,7 @@ const Header = () => {
               className="h-12 w-12 object-contain"
             />
             <div>
-              <div className="font-display font-bold text-xl text-gray-900">ARIGAMI</div>
+              <div className="font-display font-bold text-xl logo-3d">ARIGAMI</div>
               <div className="text-lg text-blue-600 font-mono font-black uppercase tracking-wide">DIGITAL</div>
             </div>
           </div>
