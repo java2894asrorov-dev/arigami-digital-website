@@ -367,6 +367,57 @@ select:focus {
   animation-delay: -4s;
 }
 
+/* 3D Text Effects */
+.text-3d {
+  background: linear-gradient(135deg, #2563eb, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 
+    0 1px 0 #1e40af,
+    0 2px 0 #1e3a8a,
+    0 3px 0 #1e3a8a,
+    0 4px 0 #1d4ed8,
+    0 5px 0 #1d4ed8,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25);
+  transform: translateZ(0);
+}
+
+.text-3d-shadow {
+  position: relative;
+}
+
+.text-3d-shadow::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(4px, 4px);
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.logo-3d {
+  background: linear-gradient(135deg, #1f2937, #374151, #4b5563);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 
+    0 1px 0 #0f172a,
+    0 2px 0 #0f172a,
+    0 3px 0 #1e293b,
+    0 4px 5px rgba(0,0,0,.3);
+  transform: translateZ(0);
+}
+
 /* Responsive 3D shapes */
 @media (max-width: 768px) {
   .floating-shapes {
