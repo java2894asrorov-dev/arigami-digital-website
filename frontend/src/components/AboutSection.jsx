@@ -146,9 +146,10 @@ const AboutSection = () => {
                     </p>
                   </CardContent>
                 </Card>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
