@@ -19,69 +19,6 @@ const ContactSection = () => {
     service: ''
   });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    
-    try {
-      // Создаем FormData для отправки в Google Forms
-      const googleFormData = new FormData();
-      
-      // Соответствие полей вашей Google формы
-      // Примерные entry ID (нужно будет получить реальные)
-      googleFormData.append('entry.123456789', formData.name); // Ваше Ім'я
-      googleFormData.append('entry.987654321', formData.phone); // Номер для зв'язку  
-      googleFormData.append('entry.456789123', formData.telegram); // Телеграм
-      googleFormData.append('entry.789123456', formData.business); // Чим ви займатесь
-      googleFormData.append('entry.321654987', formData.request); // Основний запит
-      googleFormData.append('entry.654987321', formData.instagram); // посилання на Instagram
-      googleFormData.append('entry.159753486', formData.service); // Яка послуга вас цікавить
-      
-      // Отправляем в вашу Google форму
-      await fetch('https://docs.google.com/forms/d/e/1FAIpQLScPTPBVvl4aMeZ2DQ5u921kfvqMwzTwSvfXzv8df-bWtB23XQ/formResponse', {
-        method: 'POST',
-        mode: 'no-cors',
-        body: googleFormData
-      });
-      
-      toast.success('Заявка надіслана! Ми зв\'яжемося з вами протягом 15 хвилин ⚡');
-      
-      // Очищаем форму
-      setFormData({
-        name: '',
-        phone: '',
-        telegram: '',
-        business: '',
-        request: '',
-        instagram: '',
-        service: ''
-      });
-      
-    } catch (error) {
-      console.error('Помилка відправки:', error);
-      toast.error('Помилка відправки заявки. Спробуйте ще раз або зв\'яжіться з нами напрямую.');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const services = [
-    'Таргетована реклама в META',
-    'Реклама в TikTok',
-    'Google Ads',
-    'Брендинг',
-    'SMM',
-    'Індивідуальна консультація'
-  ];
-
   const contactMethods = [
     {
       icon: Phone,
