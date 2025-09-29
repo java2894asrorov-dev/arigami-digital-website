@@ -119,11 +119,17 @@ const ContactSection = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Отримайте безкоштовну консультацію та дізнайтеся, як ми можемо допомогти вашому бізнесу зрости
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="border-0 shadow-xl">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <Card className="border-0 shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                   Залишити заявку
