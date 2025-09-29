@@ -44,7 +44,7 @@ const AboutSection = () => {
               <div className="space-y-6">
                 <h2 className="text-4xl lg:text-5xl font-display font-bold text-gray-900">
                   Чому обирають 
-                  <span className="text-blue-600">Arigami Digital</span>?
+                  <span className="text-blue-600"> Arigami Digital</span>?
                 </h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Ми не просто запускаємо рекламу - ми створюємо результат. Наш підхід базується на трьох кітах: 
