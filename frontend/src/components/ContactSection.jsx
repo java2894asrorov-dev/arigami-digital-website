@@ -256,9 +256,16 @@ const ContactSection = () => {
                 </form>
               </CardContent>
             </Card>
+            </motion.div>
 
             {/* Contact Info & CTA */}
-            <div className="space-y-8">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-8"
+            >
               {/* Contact Methods */}
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-gray-900">
