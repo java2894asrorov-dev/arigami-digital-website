@@ -37,7 +37,7 @@ const HeroSection = () => {
                     const contactSection = document.getElementById('contact');
                     contactSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium group"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full text-lg font-medium group shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   РОЗПОЧАТИ ЗАРАЗ
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -49,7 +49,7 @@ const HeroSection = () => {
                     const servicesSection = document.getElementById('services');
                     servicesSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-full text-lg font-medium"
+                  className="border-2 border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white hover:border-transparent px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 backdrop-blur-sm"
                 >
                   ДІЗНАТИСЯ БІЛЬШЕ
                 </Button>
