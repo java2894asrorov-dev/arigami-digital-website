@@ -82,7 +82,7 @@ const HeroSection = () => {
               <div className="grid grid-cols-2 gap-6">
                 {/* Service Cards */}
                 <div className="space-y-6">
-                  <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                  <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                       <Target className="h-6 w-6 text-blue-600" />
                     </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                     <p className="text-sm text-gray-600">META, TikTok, Google</p>
                   </div>
                   
-                  <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                  <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
                       <Zap className="h-6 w-6 text-purple-600" />
                     </div>
@@ -100,7 +100,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="space-y-6 pt-12">
-                  <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                  <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                       <TrendingUp className="h-6 w-6 text-green-600" />
                     </div>
@@ -108,7 +108,7 @@ const HeroSection = () => {
                     <p className="text-sm text-gray-600">Соціальні мережі</p>
                   </div>
                   
-                  <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                  <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                       <div className="w-6 h-6 bg-orange-600 rounded-full"></div>
                     </div>
