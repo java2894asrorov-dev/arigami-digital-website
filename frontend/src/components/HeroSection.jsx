@@ -46,8 +46,8 @@ const HeroSection = () => {
                   <div className="text-sm text-gray-600 uppercase tracking-wide">Зростання продажів</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">50+</div>
-                  <div className="text-sm text-gray-600 uppercase tracking-wide">Успішних проектів</div>
+                  <div className="text-3xl font-bold text-blue-600">∞</div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">Креативних ідей</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-600">24/7</div>
