@@ -134,7 +134,7 @@ const ContactSection = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="+380 (67) 123-45-67"
+                        placeholder="+380 (63) 712-38-14"
                         className="h-12"
                       />
                     </div>
