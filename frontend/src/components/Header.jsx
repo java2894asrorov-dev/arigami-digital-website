@@ -65,7 +65,13 @@ const Header = () => {
             <a href="#contact" className="block py-2 text-gray-700 hover:text-blue-600">
               Контакти
             </a>
-            <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full">
+            <Button 
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full"
+            >
               БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ
             </Button>
           </div>
