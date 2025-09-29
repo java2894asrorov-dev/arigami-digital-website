@@ -65,7 +65,13 @@ const ServicesSection = () => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto text-center mb-16"
+        >
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6">
             Наші послуги
           </h2>
