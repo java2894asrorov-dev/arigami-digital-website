@@ -133,7 +133,7 @@ const ContactSection = () => {
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Ім'я *</Label>
+                    <Label htmlFor="name">Ваше ім'я *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -142,25 +142,13 @@ const ContactSection = () => {
                       placeholder="Ваше ім'я"
                       required
                       className="h-12"
+                      disabled={isLoading}
                     />
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        placeholder="your@email.com"
-                        required
-                        className="h-12"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Телефон</Label>
+                      <Label htmlFor="phone">Номер для зв'язку *</Label>
                       <Input
                         id="phone"
                         name="phone"
@@ -168,49 +156,98 @@ const ContactSection = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="+380 (63) 712-38-14"
+                        required
                         className="h-12"
+                        disabled={isLoading}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="telegram">Телеграм</Label>
+                      <Input
+                        id="telegram"
+                        name="telegram"
+                        value={formData.telegram}
+                        onChange={handleInputChange}
+                        placeholder="@your_username"
+                        className="h-12"
+                        disabled={isLoading}
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="service">Послуга</Label>
+                    <Label htmlFor="business">Чим ви займаєтесь? (Яка у вас ніша?) *</Label>
+                    <Input
+                      id="business"
+                      name="business"
+                      value={formData.business}
+                      onChange={handleInputChange}
+                      placeholder="Опишіть вашу діяльність..."
+                      required
+                      className="h-12"
+                      disabled={isLoading}
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="instagram">Посилання на Instagram</Label>
+                    <Input
+                      id="instagram"
+                      name="instagram"
+                      value={formData.instagram}
+                      onChange={handleInputChange}
+                      placeholder="https://instagram.com/your_account"
+                      className="h-12"
+                      disabled={isLoading}
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="service">Яка послуга вас цікавить? *</Label>
                     <select
                       id="service"
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
+                      required
+                      disabled={isLoading}
                       className="w-full h-12 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     >
                       <option value="">Оберіть послугу</option>
-                      {services.map((service) => (
-                        <option key={service} value={service}>
-                          {service}
-                        </option>
-                      ))}
+                      <option value="Таргетована реклама">Таргетована реклама</option>
+                      <option value="Google Ads (Контекстна)">Google Ads (Контекстна)</option>
+                      <option value="SMM">SMM</option>
+                      <option value="Таргет + SMM">Таргет + SMM</option>
+                      <option value="Таргет + Google">Таргет + Google</option>
+                      <option value="Комплекс 3 в 1">Комплекс 3 в 1</option>
+                      <option value="Сайт/Каталог/Лендінг">Сайт/Каталог/Лендінг</option>
+                      <option value="Дизайн креативів/Логотип">Дизайн креативів/Логотип</option>
+                      <option value="Розвиток бренду під ключ">Розвиток бренду під ключ</option>
                     </select>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Повідомлення</Label>
+                    <Label htmlFor="request">Який ваш основний запит?</Label>
                     <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
+                      id="request"
+                      name="request"
+                      value={formData.request}
                       onChange={handleInputChange}
-                      placeholder="Розкажіть про ваш проект або задайте питання..."
+                      placeholder="Розкажіть детальніше про ваші потреби..."
                       rows={4}
                       className="resize-none"
+                      disabled={isLoading}
                     />
                   </div>
 
                   <Button 
                     type="submit" 
                     size="lg" 
+                    disabled={isLoading}
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white h-12 rounded-lg font-medium group"
                   >
-                    ВІДПРАВИТИ ЗАЯВКУ
-                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    {isLoading ? 'ВІДПРАВЛЯЄМО...' : 'ВІДПРАВИТИ ЗАЯВКУ'}
+                    {!isLoading && <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />}
                   </Button>
                 </form>
               </CardContent>
