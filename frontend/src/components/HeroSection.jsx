@@ -68,10 +68,15 @@ const HeroSection = () => {
                   <div className="text-sm text-gray-600 uppercase tracking-wide">Підтримка клієнтів</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Content - Visual Elements */}
-            <div className="relative">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="relative"
+            >
               <div className="grid grid-cols-2 gap-6">
                 {/* Service Cards */}
                 <div className="space-y-6">
