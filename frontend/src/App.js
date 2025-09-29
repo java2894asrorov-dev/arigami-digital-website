@@ -18,6 +18,7 @@ const LandingPage = () => {
       <Header />
       <main>
         <HeroSection />
+        <MissionSection />
         <ServicesSection />
         <AboutSection />
         <ContactSection />
