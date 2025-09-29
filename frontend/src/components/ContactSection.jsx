@@ -36,15 +36,14 @@ const ContactSection = () => {
       // Создаем FormData для отправки в Google Forms
       const googleFormData = new FormData();
       
-      // Соответствие полей вашей Google формы
-      // Примерные entry ID (нужно будет получить реальные)
-      googleFormData.append('entry.123456789', formData.name); // Ваше Ім'я
-      googleFormData.append('entry.987654321', formData.phone); // Номер для зв'язку  
-      googleFormData.append('entry.456789123', formData.telegram); // Телеграм
-      googleFormData.append('entry.789123456', formData.business); // Чим ви займатесь
-      googleFormData.append('entry.321654987', formData.request); // Основний запит
-      googleFormData.append('entry.654987321', formData.instagram); // посилання на Instagram
-      googleFormData.append('entry.159753486', formData.service); // Яка послуга вас цікавить
+      // Реальные entry ID из вашей Google формы
+      googleFormData.append('entry.2047965147', formData.name); // Ваше ім'я
+      googleFormData.append('entry.2067534945', formData.phone); // Номер для зв'язку  
+      googleFormData.append('entry.1942353565', formData.telegram); // Телеграм
+      googleFormData.append('entry.703946920', formData.business); // Чим ви займатесь
+      googleFormData.append('entry.1089921804', formData.request); // Основний запит
+      googleFormData.append('entry.1033157831', formData.instagram); // посилання на Instagram
+      googleFormData.append('entry.1471033604', formData.service); // Яка послуга вас цікавить
       
       // Отправляем в вашу Google форму
       await fetch('https://docs.google.com/forms/d/e/1FAIpQLScPTPBVvl4aMeZ2DQ5u921kfvqMwzTwSvfXzv8df-bWtB23XQ/formResponse', {
