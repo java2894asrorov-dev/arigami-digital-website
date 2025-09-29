@@ -29,7 +29,7 @@ const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_041d947b-c392-44a0-8a73-ec2e8e1b6062/artifacts/xt8024o8_file_000000003d9462468e13d4fece119786.png"
                 alt="Arigami Digital Logo"
-                className="h-10 w-10 object-contain"
+                className="h-12 w-12 object-contain"
               />
               <div>
                 <div className="font-display font-bold text-2xl">ARIGAMI</div>
