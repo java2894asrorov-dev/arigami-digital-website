@@ -5,9 +5,9 @@ export const mockData = {
     name: "Arigami Digital",
     tagline: "Ваш бізнес заслуговує на найкращу рекламу",
     description: "Створюємо ефективні рекламні кампанії з повним контролем результату. Стратегія + Аналітика + Креатив = Ваш успіх.",
-    phone: "+380 (67) 123-45-67",
-    email: "hello@arigami.digital",
-    telegram: "@arigami_digital",
+    phone: "+380 (63) 712-38-14",
+    email: "arigamidigital@gmail.com",
+    whatsapp: "+380637123814",
     address: "м. Київ, Україна"
   },
 
