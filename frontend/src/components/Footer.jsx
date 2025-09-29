@@ -83,20 +83,20 @@ const Footer = () => {
             <div className="space-y-4">
               <div>
                 <div className="text-gray-400 text-sm">Телефон</div>
-                <a href="tel:+380671234567" className="text-white hover:text-blue-400 transition-colors">
-                  +380 (67) 123-45-67
+                <a href="tel:+380637123814" className="text-white hover:text-blue-400 transition-colors">
+                  +380 (63) 712-38-14
                 </a>
               </div>
               <div>
                 <div className="text-gray-400 text-sm">Email</div>
-                <a href="mailto:hello@arigami.digital" className="text-white hover:text-blue-400 transition-colors">
-                  hello@arigami.digital
+                <a href="mailto:arigamidigital@gmail.com" className="text-white hover:text-blue-400 transition-colors">
+                  arigamidigital@gmail.com
                 </a>
               </div>
               <div>
-                <div className="text-gray-400 text-sm">Telegram</div>
-                <a href="#" className="text-white hover:text-blue-400 transition-colors">
-                  @arigami_digital
+                <div className="text-gray-400 text-sm">WhatsApp</div>
+                <a href="https://wa.me/380637123814" className="text-white hover:text-blue-400 transition-colors">
+                  +380 (63) 712-38-14
                 </a>
               </div>
             </div>
