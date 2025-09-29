@@ -37,8 +37,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 bg-gray-50 relative overflow-hidden">
+      <FloatingShapes />
+      <div className="container mx-auto px-6 relative z-10">
         {/* Main About Content */}
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
