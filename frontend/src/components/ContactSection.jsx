@@ -53,7 +53,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: 'Телефон',
-      value: '+380 (67) 123-45-67',
+      value: '+380 (63) 712-38-14',
       action: 'Зателефонувати',
       color: 'text-green-600',
       bgColor: 'bg-green-100'
@@ -61,18 +61,18 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'hello@arigami.digital',
+      value: 'arigamidigital@gmail.com',
       action: 'Написати лист',
       color: 'text-blue-600',
       bgColor: 'bg-blue-100'
     },
     {
       icon: MessageCircle,
-      title: 'Telegram',
-      value: '@arigami_digital',
-      action: 'Написати в Telegram',
-      color: 'text-sky-600',
-      bgColor: 'bg-sky-100'
+      title: 'WhatsApp',
+      value: '+380637123814',
+      action: 'Написати в WhatsApp',
+      color: 'text-green-600',
+      bgColor: 'bg-green-100'
     }
   ];
 
