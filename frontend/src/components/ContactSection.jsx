@@ -10,10 +10,12 @@ import { toast } from 'sonner';
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
-    service: '',
-    message: ''
+    telegram: '',
+    business: '',
+    request: '',
+    instagram: '',
+    service: ''
   });
 
   const handleInputChange = (e) => {
