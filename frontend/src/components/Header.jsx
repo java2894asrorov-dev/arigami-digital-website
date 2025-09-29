@@ -10,10 +10,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_041d947b-c392-44a0-8a73-ec2e8e1b6062/artifacts/xt8024o8_file_000000003d9462468e13d4fece119786.png"
+              alt="Arigami Digital Logo"
+              className="h-10 w-10 object-contain"
+            />
             <div>
               <div className="font-display font-bold text-xl text-gray-900">ARIGAMI</div>
               <div className="text-xs text-blue-600 font-mono uppercase tracking-wider">DIGITAL</div>
