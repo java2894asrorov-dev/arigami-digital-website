@@ -8,6 +8,7 @@ import { Phone, Mail, MessageCircle, Send } from 'lucide-react';
 import { toast } from 'sonner';
 
 const ContactSection = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
