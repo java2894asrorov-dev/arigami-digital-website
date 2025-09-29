@@ -18,7 +18,7 @@ const Header = () => {
             />
             <div>
               <div className="font-display font-bold text-xl text-gray-900">ARIGAMI</div>
-              <div className="text-xs text-blue-600 font-mono uppercase tracking-wider">DIGITAL</div>
+              <div className="text-xs text-blue-600 font-mono font-bold uppercase tracking-wider">DIGITAL</div>
             </div>
           </div>
 
